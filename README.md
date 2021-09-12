@@ -6,9 +6,7 @@ The t-ILRMA code is revised from ILRMA  (ILRMA's source: https://github.com/masa
 The revised point:
     
     1. simulation condition
-    
     2. ILRMA -> t-ILRMA
-    
     3. SNR -> SI-SDR
 
 ## References
