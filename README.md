@@ -2,9 +2,13 @@
 multi-channel sound separation
 
 The t-ILRMA code is revised from ILRMA  (ILRMA's source: https://github.com/masahitotogami/python_source_separation/blob/master/section8/sample_code_c8_3.py) (MIT license).
+
 The revised point:
+    
     1. simulation condition
+    
     2. ILRMA -> t-ILRMA
+    
     3. SNR -> SI-SDR
 
 ## References
