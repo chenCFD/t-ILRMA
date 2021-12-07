@@ -21,7 +21,7 @@ def execute_ip_time_varying_gaussian_tilrma(x,W,a,b,mu,p,n_iterations=20):
         k=alpha*(sigma**2)
         sp=sigma**p
 
-        a=a*(((np.einsum("ksb,skt->bst",b,s_power/(((mu/(mu+2))*(sigma**2+s_power))*np.maximum(sp,1.e-18)))/np.einsum("ksb,skt->bst",b,1./np.maximum(sp,1.e-18)))**(p/(p+2)))*0.4)
+        a=a*(((np.einsum("ksb,skt->bst",b,s_power/(((mu/(mu+2))*(sigma**2+s_power))*np.maximum(sp,1.e-18)))/np.einsum("ksb,skt->bst",b,1./np.maximum(sp,1.e-18)))**(p/(p+2)))**0.4)
 
         b=b*(((np.einsum("bst,skt->ksb",a,s_power/(((mu/(mu+2))*(sigma**2+s_power))*np.maximum(sp,1.e-18)))/np.einsum("bst,skt->ksb",a,1./np.maximum(sp,1.e-18)))**(p/(p+2)))**0.4)
 
