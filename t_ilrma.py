@@ -114,7 +114,7 @@ for clean_wave_file in clean_wave_files:
 
 n_sim_sources=2
 
-sample_rate=40000
+sample_rate=16000
 
 N=1024
 
